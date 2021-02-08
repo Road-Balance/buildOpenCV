@@ -7,12 +7,24 @@ Building for:
 * OpenCV 4.1.1
 * Packaging Option ( Builds package by default; --no_package does not build package)
 
+And Also Tested in `Jetson AGX NX`
+
+* Jetpack Version: 4.5-b129
+* Architecture: arm64
+* nvidia-l4t-jetson-multimedia-api (>> 32.5-0)
+
 <em><b>Note: </b>The script does not check to see which version of L4T is running before building, understand the script may only work with the stated versions.</em>
 
 ### Building
 This is a long build, you may want to write to a log file, for example:
 
 <blockquote>$ ./buildOpenCV.sh |& tee openCV_build.log</blockquote>
+
+### New!! Build for Jetson AGX NX
+In fact, it's suitable for all jetson platforms
+
+<blockquote>$ sudo ./buildOpenCVJetson.sh |& tee openCV_build.log</blockquote>
+
 
 While the build will still be written to the console, the build log will be written to openCV_build.log for later review.
 
